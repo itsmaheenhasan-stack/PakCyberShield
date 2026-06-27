@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Cyber Simulator</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-[#030712] text-white p-10">
+
+
+<h1 class="text-4xl font-bold text-emerald-400">
+
+Cyber Scam Simulator
+
+</h1>
+
+
+
+<div class="bg-gray-900 p-8 rounded-xl mt-10">
+
+
+<h2>
+
+Scenario 1
+
+</h2>
+
+
+<p class="mt-5">
+
+A message says:
+
+<br><br>
+
+"Your bank account will be blocked. Send your OTP immediately."
+
+</p>
+
+
+
+<button onclick="wrong()"
+
+class="bg-red-500 p-3 mt-5 rounded">
+
+Send OTP
+
+</button>
+
+
+
+<button onclick="correct()"
+
+class="bg-emerald-500 text-black p-3 mt-5 rounded">
+
+Report Scam
+
+</button>
+
+
+
+<p id="result" class="mt-5">
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function correct(){
+
+document.getElementById("result").innerHTML=
+
+"Correct. Never share OTPs. Verify using official channels."
+
+}
+
+
+
+function wrong(){
+
+document.getElementById("result").innerHTML=
+
+"Wrong. Attackers use urgency to steal accounts."
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
